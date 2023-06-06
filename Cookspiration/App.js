@@ -2,6 +2,8 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer, DarkTheme } from '@react-navigation/native';
 import Tabs from './src/navigation/BottomTabNavigator';
 
+console.error = () => {};
+
 const CustomDarkTheme = {
   ...DarkTheme,
   colors: {

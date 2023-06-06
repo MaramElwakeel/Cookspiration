@@ -53,9 +53,9 @@ export default function CategoryCarousel() {
     <View>
       <View style={{flexDirection: 'row', justifyContent: 'space-between', padding: 10}}>
         <Text style={{fontSize: 18, fontWeight: 'bold', color: 'white'}}>Top Categories</Text>
-        <TouchableOpacity onPress={renderSeeAllButton}>
+        {/* <TouchableOpacity onPress={renderSeeAllButton}>
           <Text style={{fontSize: 16, color: 'white', backgroundColor: 'blue', borderRadius: 10, padding: 5}}>See All</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
       <FlatList
         horizontal

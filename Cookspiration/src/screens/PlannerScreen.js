@@ -1,9 +1,11 @@
-import {Text, View } from 'react-native';
+import React from 'react';
+import { ScrollView } from 'react-native';
+import PlannerPage from '../components/Planner/PlannerPage';
 
 export default function PlannerScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Planner!</Text>
-    </View>
+    <ScrollView>
+      <PlannerPage />
+    </ScrollView>
   );
 }

@@ -3,12 +3,15 @@ import RecipesSearchBar from '../components/Common/RecipesSearchBar';
 import Recipes from '../components/Common/Recipes';
 import CollectionList from '../components/MyCookbook/CollectionList';
 
-export default function MyCookbookScreen() {
+export default function MyCookbookScreen({data, toggleBookmark}) {
+  // This filters the recipes to only those that are bookmarked.
+  const bookmarkedRecipes = data.filter(recipe => recipe.isBookmarked);
+  
   return (
     <ScrollView>
-      <RecipesSearchBar />
+      <RecipesSearchBar data={bookmarkedRecipes} />
       <CollectionList />
-      <Recipes />
+      <Recipes data={bookmarkedRecipes} toggleBookmark={toggleBookmark}/>
     </ScrollView>
   );
 }

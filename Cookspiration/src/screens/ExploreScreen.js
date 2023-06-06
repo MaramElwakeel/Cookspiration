@@ -4,12 +4,12 @@ import RecipesSearchBar from '../components/Common/RecipesSearchBar';
 import CategoryCarousel from '../components/Explore/CategoryCarousel';
 import Recipes from '../components/Common/Recipes';
 
-export default function ExploreScreen() {
+export default function ExploreScreen({data, toggleBookmark}) {
   return (
     <ScrollView>
-      <RecipesSearchBar />
+      <RecipesSearchBar data={data} />
       <CategoryCarousel />
-      <Recipes />
+      <Recipes data={data} toggleBookmark={toggleBookmark} />
     </ScrollView>
   );
 }
