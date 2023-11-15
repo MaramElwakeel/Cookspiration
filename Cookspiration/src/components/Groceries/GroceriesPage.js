@@ -35,13 +35,13 @@ export default function GroceriesPage () {
   };
 
   const renderItem = ({ item }) => (
-    <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 10 }}>
-      <Image source={item.image} style={{ width: 50, height: 50, marginRight: 10 }} />
+    <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+      <Image source={item.image} style={{ width: 1, height: 50, }} />
       <Text style={{color: 'white'}}>{item.name}</Text>
       <CheckBox
         checked={item.checked}
         onPress={() => handleCheck(item.id)}
-        containerStyle={{ marginLeft: 'auto', marginRight: 10 }}
+        containerStyle={{ marginLeft: 240 }}
       />
     </View>
   );
